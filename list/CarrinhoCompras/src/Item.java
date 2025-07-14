@@ -22,4 +22,13 @@ public class Item {
         return quantidade;
     }
 
+    public double getValorTotal(){
+        return preco * quantidade;
+    }
+
+    @Override
+    public String toString() {
+        return nome + " - R$" + preco + " x " + quantidade;
+    }
+
 }

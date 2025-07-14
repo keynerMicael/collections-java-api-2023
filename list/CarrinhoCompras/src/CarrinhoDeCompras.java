@@ -25,8 +25,22 @@ public class CarrinhoDeCompras {
         produtosList.removeAll(itensRecusados);
     }
 
-    public void calcularValorTotal() {
-        
+    public double calcularValorTotal() {
+        double total = 0;
+        for(Item item : produtosList) {
+            total += item.getValorTotal();
+        }
+        return total;
+    }
+
+    public void exibirItens() {
+        if(produtosList.isEmpty()) {
+            System.out.println("O carrinho esta vazio");
+        } else {
+            for(Item item : produtosList) {
+                System.out.println(item);
+            }
+        }
     }
 
 }
