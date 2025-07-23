@@ -39,6 +39,9 @@ public class Main {
                 case 4:
                 conjuntoPalavras.exibirPalavrasUnicas();
                 break;
+                case 0:
+                System.out.println("Encerrando programa....");
+                break;
                 default:
                 System.out.println("Opção ivalidda, tente novamente");
             }
